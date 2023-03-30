@@ -1,0 +1,43 @@
+ <div id="slider">
+            <h2 style="color: black;"> Slider</h2>
+
+        </div>
+        <div id="rec_movies">
+            <h2 style="color: whitesmoke;"> Recommended movies</h2>
+        </div>
+
+          }
+        #slider{
+            background-color: beige;
+            width: 100%;
+            height: 300px;
+        }
+        #rec_movies{
+            background-color: lightblue;
+            width: 100%;
+            height: 300px;
+        }
+
+
+
+         background-color: rgb(31, 37, 51);
+
+
+
+
+
+
+
+             public boolean isPrime(int N){
+           boolean [] prime= new boolean[N+1];
+        for(int i=0;i<N;i++)
+            prime[i]=true;
+            for(int j=2;j*j<=N;j=j++){
+                if(prime[j]==true){
+                    for(int i=j*j;i<=N;i=i+j){
+                        prime[i]=false;
+                    }
+                }
+            }
+            return false;
+    }

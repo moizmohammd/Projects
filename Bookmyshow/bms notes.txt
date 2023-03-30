@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            color:black;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #banner{
+            background-color: rgb(51, 53, 69);
+            width: 100%;
+            height: 64px;
+        }
+        .banner1 a.split{
+            float: right;
+            color: rgb(204, 204, 204);
+            margin-right: 400px;
+            margin-top: 15px;
+            padding: 5px 5px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: rgb(31, 37, 51);
+        }
+        .topnav a{
+            float: left;
+             color:rgb(204, 204, 204);
+             text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a.split{
+            float: right;
+            color: rgb(204, 204, 204);
+            margin-right: 40px;
+            padding: 5px 5px;
+            font-size: 17px;
+
+        }
+        .topnav a:hover{
+            color:whitesmoke ;
+        }
+       #slider{
+        overflow: hidden;
+       }
+       @keyframes slider{
+        0%{left: 0;}
+        30%{left: 0;}
+        33%{left: -100%;}
+        63%{left: -100%;}
+        66%{left: -200%;}
+        95%{left: -200%;}
+        100%{left: 0;}
+       }
+       #slider figure{
+        width: 300%;
+        position: relative;
+        animation: 5s slider infinite;
+       }
+       #slider figure:hover{
+        -webkit-animation-play-state: paused;
+        cursor: pointer;
+       }
+       #slider figure img{
+        width: 33.33333333%;
+        height: 50%;
+        float: left;
+        flex-flow: nowrap;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id="banner">
+            <div class="banner1">
+            <img style="margin-left: 150px; margin-top: 5px;" src="logo.jpeg.png">
+            <input style=" width: 380px; vertical-align: 19px; padding: 9px; border-radius: 5px; outline: none;" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+            <a href="#hyderabad" class="split">Hyderabad</a>
+            <button style="background-color: rgb(248, 68, 100); text-decoration: none; margin-left: 1150px; margin-top: -48px; outline: none; border-radius: 4px; width: 67px; line-height: 20px; border: 1px solid rgb(248, 68, 100);">Sign In</button>
+            </div>
+        </div>
+        <div id="navbar">
+            <div class="topnav">
+            <a href="#movies">movies</a>
+            <a href="#streams">Streams<sup style="color: red; font-size: 10px;">New</sup></a>
+            <a href="#events">Events</a>
+            <a href="#plays">Plays</a>
+            <a href="#sports">Sports</a>
+            <a href="#activities">Activities</a>
+            <a href="#buzz">Buzz</a>
+            <a href="#giftcards" class="split" style="width: auto;">Gift Cards</a>
+            <a href="#offers" class="split" style="width:auto;">Offers</a>
+            <a href="#corporates" class="split" style="width:auto;">Corporates</a>
+            <a href="#listyourshow" class="split" style="width: auto;">Listyourshow <sup style="color: red; font-size: 10px; ">New</sup></a>
+            </div>
+        </div>
+        <br>
+        <div id="slider">
+            <figure>
+                <img src="slide1.jpeg">
+                <img src="slide2.jpeg">
+                <img src="slide3.jpeg">
+                <img src="slide4.jpeg">
+            </figure>
+       </div>
+       <div id="rec_movies">
+        <h2 style="color: black;"> Recommended movies</h2>
+    </div>
+    </div>
+</body>
+</html>

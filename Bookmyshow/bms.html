@@ -1,0 +1,475 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies tickets,plays,sports,events</title>
+    <link rel="shortcut icon" href="favicon1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        #main{
+            color:black;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            margin: 10px 128px;
+            padding: 0px 0px 35px;
+        }
+        .container h2{
+            font-size: 24px;  
+            font-family: 'Roboto';
+            align-items: center; 
+            padding:5px; 
+            font-weight:700;
+            color: #333333;
+        }
+        .container p{
+            font-size: 14px;  
+            font-family: 'Roboto';
+            align-items: center; 
+            padding:5px; 
+            font-weight:700;
+        }
+
+        #banner{
+            background-color: rgb(51, 53, 69);
+            width: 100%;
+            height: 64px;
+        }
+        .banner1 a.split{
+            float: right;
+            color: rgb(204, 204, 204);
+            margin-right: 400px;
+            margin-top: 15px;
+            padding: 5px 5px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .banner1 a:hover{
+            color: whitesmoke;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: rgb(31, 37, 51);
+        }
+        .topnav a{
+            float: left;
+             color:rgb(204, 204, 204);
+             text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a.split{
+            float: right;
+            color: rgb(204, 204, 204);
+            margin-right: 40px;
+            padding: 5px 5px;
+            font-size: 17px;
+
+        }
+        .topnav a:hover{
+            color:whitesmoke ;
+        }
+       #slider{
+        overflow: hidden;
+       }
+       @keyframes slider{
+        0%{left: 0;}
+        20%{left: 0;}
+        25%{left: -100%;}
+        45%{left: -100%;}
+        50%{left: -200%;}
+        70%{left: -200%;}
+        75%{left: -300%;}
+        95%{left: -300%;}
+        100%{left:-400%;}
+       }
+       #slider figure{
+        width: 500%;
+        position: relative;
+        animation: 5s slider infinite;
+       }
+       #slider figure:hover{
+        -webkit-animation-play-state: paused;
+        cursor: pointer;
+       }
+       #slider figure img{
+        width: 20%;
+        height: 50%;
+        float: left;
+        flex-flow: nowrap;
+       }
+       .parent{
+        display: inline-flex;
+        width: 100%;
+        height: 534;
+       }
+       .child{
+        width: 248px;
+        height: 462px;
+       }
+       .child img{
+        width: 222.4px;
+        height: 378.8px;
+        border-radius: 15px;
+       }
+       .child h6{
+        font-size: 18px;
+         font-weight: 600;
+         font-family: 'Roboto';      
+         padding: 8px 2px 5px 2px;
+       }
+       .child p{
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Roboto';  
+        color: rgb(102, 102, 102);
+       }
+       .events{
+        width: 226px;
+        height: 226px;
+        margin-right: 20px;
+       }
+       .parent1{
+        display:inline-flex;
+        width: 100%;
+        height: 400px;
+        background-color: #2B3148;
+       }
+       .child1{
+        width: 248px;
+       height: 462px;
+       background-color: #2B3148;
+       }
+       .child1 img{
+        width: 222.4px;
+        height: 378.8px;
+        border-radius: 15px;
+        background-color: #2B3148;
+        background-color: #2B3148;
+       }
+       .child1 h6{
+        font-size: 18px;
+         font-weight: 500;
+         font-family: 'Roboto';
+         color:white; 
+         margin: 0px 0px 4px;
+         background-color: #2B3148;     
+         padding: 18px 2px 5px 2px ;
+       }
+       .child1 p{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Roboto';  
+        color:white;
+        background-color: #2B3148;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id="banner">
+            <div class="banner1">
+            <img style="margin-left: 150px; margin-top: 5px;" src="logo.jpeg.png">
+            <input style=" width: 380px; vertical-align: 19px; padding: 9px; border-radius: 5px; outline: none;" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+            <a href="#hyderabad" class="split">Hyderabad<i class="fa-sharp fa-solid fa-caret-down" style="margin-left: 4px; color: whitesmoke;"></i></a>
+            <button style="background-color: rgb(248, 68, 100); text-decoration: none; margin-left: 1150px; margin-top: -48px; outline: none; border-radius: 4px; width: 67px; line-height: 20px; border: 1px solid rgb(248, 68, 100);">Sign In</button>
+            </div>
+        </div>
+        <div id="navbar">
+            <div class="topnav">
+            <a href="#movies">movies</a>
+            <a href="#streams">Streams<sup style="color: red; font-size: 10px;">New</sup></a>
+            <a href="#events">Events</a>
+            <a href="#plays">Plays</a>
+            <a href="#sports">Sports</a>
+            <a href="#activities">Activities</a>
+            <a href="#buzz">Buzz</a>
+            <a href="#giftcards" class="split" style="width: auto;">Gift Cards</a>
+            <a href="#offers" class="split" style="width:auto;">Offers</a>
+            <a href="#corporates" class="split" style="width:auto;">Corporates</a>
+            <a href="#listyourshow" class="split" style="width: auto;">Listyourshow <sup style="color: red; font-size: 10px; ">New</sup></a>
+            </div>
+        </div>
+        <br>
+        <div id="slider">
+            <figure>
+                <img src="slide1.jpeg">
+                <img src="slide2.jpeg">
+                <img src="slide3.jpeg">
+                <img src="slide4.jpeg">
+                <img src="slide1.jpeg">
+            </figure>
+       </div>
+       <br>
+       <!--------------------------------------------------recommended movies---------------------------------------->
+       <div class="container">
+       <div id="movies">
+        <h2 style="color: black;"> Recommended movies</h2>
+        <br>
+        <div class="parent">
+            <div class="child">
+        <a href="https://in.bookmyshow.com/hyderabad/movies/avatar-the-way-of-water/ET00037264">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICAxNzYuNUsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-gsyzhmfdzc-portrait.jpg">
+        </a>
+        <h6>Avatar: The way of water</h6>
+        <p>Action Movie</p>
+            </div>
+            <div class="child">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-NS4xLzEwICAyNksgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00145851-rwxeypugtu-portrait.jpg">
+        <h6>Cirkus</h6>
+        <p>Comedy Movie</p>
+            </div>
+            <div class="child">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC45LzEwICAxMTBLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00331997-lmpkuaycqf-portrait.jpg">
+        <h6>Drishyam 2</h6>
+        <p>Crime drama/suspense</p>
+            </div>
+            <div class="child">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny44LzEwICAzOEsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312739-eqyattwrye-portrait.jpg">
+        <h6>Bhediya</h6>
+        <p>Action Movie</p>
+            </div>
+            <div class="child">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MjUsIEphbiAyMDIz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323848-wuqmgjychz-portrait.jpg">
+        <h6>Pathaan</h6>
+        <p>Action Movie</p>
+            </div>
+       </div>
+    </div>
+       </div>
+       <!----------------------------------------------------------------------------------Ads------------------------------------------------------->
+       <div class="container">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png" width="100%">
+       </div>
+       <!-------------------------------------------------------------live events------------------------------------------------------>
+       <div class="container">
+        <div id="events">
+            <h2>The Best of Live Events</h2>
+            <img class="events" src="event1.jpeg">
+            <img class="events" src="event2.jpeg">
+            <img class="events"src="event3.jpeg">
+            <img class="events" src="event4.jpeg" alt="">
+            <img class="events" src="event5.jpeg" alt="">
+        </div>
+       </div>
+       <!-------------------------------------------------Premiere--------------------------------------------------------------->
+       
+       <div class="premiere" id="streams" style="background-color:  #2B3148; height: 680px;">
+        <div class="container" style="background-color: #2B3148; height: 600px;">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png">
+        <div>
+        <h2  style="color: white;background-color: #2B3148;">Premieres</h2>
+        <p style="color: white; padding-Bottom: 10px;background-color: #2B3148;">Brand new releases every friday</p>
+        <div class="parent1">
+            <div class="child1">
+            <img src="p.png" alt="">
+            <h6>Black Adam</h6>
+            <p>English</p>
+            </div>
+            <div class="child1">
+                <img src="p2.png" alt="">
+                <h6>Top Gun:Maverick</h6>
+                <p>English</p>
+            </div>
+            <div class="child1">
+                <img src="p3.png" alt="">
+                <h6>Ticket to Paradise</h6>
+                <p>English</p>
+            </div>
+            <div class="child1">
+                <img src="p4.png" alt="">
+                <h6>Ebhabei Golpo Hok</h6>
+                <p>Bengali</p>
+            </div>
+        </div>
+        </div>
+        </div>
+       </div>
+       <!----------------------------------------Events happening near you---------------------------------------------------------------->
+       <div class="container">
+        <div id="events">
+            <h2 style="margin-top: 5%;">Events Happening Near You</h2>  
+            <div class="parent">
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNCBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00343205-eymnyanuzy-portrait.jpg" alt="">
+                    <h6>Night Photography- Mastering Photography</h6>
+                    <p>Ramadasu Statue: Hyderabad</p>
+                    <p>3.49 kms away</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxMiBGZWIgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00314106-hwvqgzjfzd-portrait.jpg" alt="">
+                    <h6>Basics of Photography- Necklace Road</h6>
+                    <p>Peoples Plaza: Hyderabad</p>
+                    <p>4.38 kms away</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00344219-ajzmugwgzr-portrait.jpg" alt="">
+                    <h6>Settle in Canada(PR) - Immigration Drive</h6>
+                    <p>Taj Deccan: Hyderabad</p>
+                    <p>5.28 kms away</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00344728-wldjushmzh-portrait.jpg" alt="">
+                    <h6>Study medicine in the US - EXPO 2023</h6>
+                    <p>Taj Deccan: Hyderabad</p>
+                    <p>5.28 kms away</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!----------------------------------------Online Streaming Events------------------------------------------------------->
+       <div class="container">
+        <div id="online streaming events">
+            <h2 style="margin-top: 5%;">Online Streaming Events</h2>  
+            <div class="parent">
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzMSBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304004-gjhbbmuxsy-portrait.jpg" alt="">
+                    <h6>Data Science</h6>
+                    <p>Online Streaming</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzMSBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304009-rfxkbdasdz-portrait.jpg" alt="">
+                    <h6>Digital Marketing</h6>
+                    <p>Online Streaming</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMSBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348929-jbhtatnzep-portrait.jpg" alt="">
+                    <h6>Pattachitra Mandala Workshop</h6>
+                    <p>Watch on Zoom</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzMSBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304000-ftxkndwfjs-portrait.jpg" alt="">
+                    <h6>Executive Pg progamme</h6>
+                    <p>Online Streaming</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!------------------------------------------------------------outdoor events----------------------------------------------->
+       <div class="container">
+        <div id="activities">
+            <h2 style="margin-top: 5%;">Outdoor Events<span style="background-color: red; font-size: 16px; color: white; padding: 2px;">New</span></h2>  
+            <div class="parent">
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00341727-frwrxjmfvv-portrait.jpg" alt="">
+                    <h6>PETEX INDIA 2023</h6>
+                    <p>HITEX Exhibition center: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxMSBGZWI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348268-pnnxaauhdv-portrait.jpg" alt="">
+                    <h6>Hyderabad E-Prix</h6>
+                    <p>Necklace Road: Hyderabad</p>
+                    <p>4.38 kms away</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA0IE1hcg%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00349379-gvyklbevlg-portrait.jpg" alt="">
+                    <h6>Sunbrun Arena ft.Martix Garrix</h6>
+                    <p>venue to be announced: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAxMiBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00063786-tqrxpnszls-portrait.jpg" alt="">
+                    <h6>Wonderla Amusement Park</h6>
+                    <p>wonderla: Hyderabad</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!------------------------------------------------------------------------Laughter therapy--------------------------------------->
+       <div class="container">
+        <div id="plays">
+            <h2 style="margin-top: 5%;">Laughter Therapy</h2>  
+            <div class="parent">
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNCBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00341506-cztnlltqrv-portrait.jpg" alt="">
+                    <h6>Clarity stand up Comedy</h6>
+                    <p>Heart Cup Coffee: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA0IEZlYg%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00346737-dveagvxtxg-portrait.jpg" alt="">
+                    <h6>Vipul Goyal Live</h6>
+                    <p>Chemistry Rooftop: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyNiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00346204-nczyaycwnm-portrait.jpg" alt="">
+                    <h6>Kunal Kamra Live</h6>
+                    <p>Venue to be announced: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAxMiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327448-cczyrypfdm-portrait.jpg" alt="">
+                    <h6>Stand up comedy open mic- Thursday</h6>
+                    <p>Enchante Confectionery: Hyderabad</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!--------------------------------------------------------------popular events-------------------------------------------------->
+       <div class="container">
+        <div id="buzz">
+            <h2 style="margin-top: 5%;">Popular Events</h2>  
+            <div class="parent">
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00341727-frwrxjmfvv-portrait.jpg" alt="">
+                    <h6>PETEX INDIA 2023</h6>
+                    <p>HITEX Exhibition center: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNCBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00341506-cztnlltqrv-portrait.jpg" alt="">
+                    <h6>Clarity stand up Comedy</h6>
+                    <p>Heart Cup Coffee: Hyderabad</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00344219-ajzmugwgzr-portrait.jpg" alt="">
+                    <h6>Settle in Canada(PR) - Immigration Drive</h6>
+                    <p>Taj Deccan: Hyderabad</p>
+                    <p>5.28 kms away</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00344728-wldjushmzh-portrait.jpg" alt="">
+                    <h6>Study medicine in the US - EXPO 2023</h6>
+                    <p>Taj Deccan: Hyderabad</p>
+                    <p>5.28 kms away</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!---------------------------------Top games and sport events------------------------------------------------------------>
+       <div class="container">
+        <div id="sports">
+            <h2 style="margin-top: 5%;">Top games and sporting events</h2>  
+            <div class="parent">
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxMSBGZWI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348268-pnnxaauhdv-portrait.jpg" alt="">
+                    <h6>Hyderabad E-Prix</h6>
+                    <p>Necklace Road: Hyderabad</p>
+                    <p>4.38 kms away</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAxMiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00342522-wtdmlusbdn-portrait.jpg" alt="">
+                    <h6>Hyderabad FC vs Chennaiyin FC</h6>
+                    <p>G.M.C Balayogi Athletic Stadium</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyNSBNYXI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348054-qgkrxxhmra-portrait.jpg" alt="">
+                    <h6>All India Quick Chess Competiton</h6>
+                    <p>Watch on Zoom</p>
+                </div>
+                <div class="child">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNiBGZWI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00346024-cljuzwxgsm-portrait.jpg" alt="">
+                    <h6>100m Sprint Run</h6>
+                    <p>Gacchibowli Stadium: Hyderabad</p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

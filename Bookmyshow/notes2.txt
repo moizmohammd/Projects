@@ -1,0 +1,77 @@
+ .slider{
+            height: 250px;
+            width: 300px;
+            position: relative;
+            margin: auto;
+            transform: translate(-50%,-50%);
+        }
+        .navi{
+            display: flex;
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translate(-50%);
+        }
+        .navi .bar{
+            height: 5px;
+            width: 45px;
+            background: #100f0f;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        .navi.bar:hover{
+            background: #fff;
+        }
+        input[type="radio"]{
+            position: absolute;
+            visibility: hidden;
+        }
+        .show{
+            display: flex;
+            height: 100%;
+            width: 500%;
+        }
+        .images{
+            transition: 0.4s ease;
+        }
+        #btn1:checked ~ .first{
+            margin-left: 0;
+        }
+        #btn2:checked ~ .first{
+            margin-left: -20%;
+        }
+        #btn3:checked ~ .first{
+            margin-left: -40%;
+        }
+        #btn4:checked ~ .first{
+            margin-left: -60%;
+        }
+
+
+
+
+             <div class="slider">
+            <div class="show">
+                <input type="radio" name="photos" id="btn1" checked>
+                <input type="radio" name="photos" id="btn2">
+                <input type="radio" name="photos" id="btn3">
+                <input type="radio" name="photos" id="btn4">
+        <div class="image first">
+            <img src="slide1.jpeg">
+        </div>
+        <div class="image">
+            <img src="slide2.jpeg">
+        </div>
+        <div class="image">
+            <img src="slide3.jpeg">
+        </div>
+        <div class="image">
+            <img src="slide4.jpeg">
+        </div>
+        <div class="navi">
+            <label for="btn1" class="bar"></label>
+            <label for="btn2" class="bar"></label>
+            <label for="btn3" class="bar"></label>
+            <label for="btn4" class="bar"></label>
+        </div>
+       </div>
